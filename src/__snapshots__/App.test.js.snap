@@ -1,0 +1,1865 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <header
+      class="App-header"
+    >
+      <h1>
+        My Awesome Programme List
+      </h1>
+    </header>
+    <main>
+      <section
+        id="search"
+      >
+        <p>
+          search goes here
+        </p>
+      </section>
+      <section
+        id="data"
+      >
+        <table
+          class="programmes"
+        >
+          <thead>
+            <tr>
+              <th>
+                ID
+              </th>
+              <th>
+                Name
+              </th>
+              <th>
+                Description
+              </th>
+              <th>
+                Active
+              </th>
+              <th>
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="active"
+            >
+              <td>
+                1938
+              </td>
+              <td>
+                100 Year Old Drivers Rebooted
+              </td>
+              <td>
+                Another look at some of the nation's oldest drivers, including 102-year-old Harry Kartz.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1595
+              </td>
+              <td>
+                1000 Heartbeats
+              </td>
+              <td>
+                Quiz show in which contestants have their heart rate constantly monitored.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1951
+              </td>
+              <td>
+                1966 - A Nation Remembers
+              </td>
+              <td>
+                Documentary celebrating the 50th anniversary of England hosting and winning the World Cup.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1262
+              </td>
+              <td>
+                30 Years of Taggart on TV
+              </td>
+              <td>
+                Documentary celebrating Taggart's 30th anniversary.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1553
+              </td>
+              <td>
+                A Christmas Cracker
+              </td>
+              <td>
+                Bradley Walsh hosts a festive spectacular with a variety of guests.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1563
+              </td>
+              <td>
+                A Funny Old Year
+              </td>
+              <td>
+                Jason Manford presents this end-of-year comedy review show.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1676
+              </td>
+              <td>
+                A Great Welsh Adventure with Griff Rhys Jones
+              </td>
+              <td>
+                Griff Rhys Jones explores his native land.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1439
+              </td>
+              <td>
+                A Matter of Trust
+              </td>
+              <td>
+                Selena Scott explores the challenges facing the  the National Trust.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                336
+              </td>
+              <td>
+                A Night of Heroes: The Sun Military Awards
+              </td>
+              <td>
+                Phillip Schofield and Amanda Holden host the annual military awards ceremony.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1860
+              </td>
+              <td>
+                A Sense of Freedom
+              </td>
+              <td>
+                Story of a real-life Scottish criminal who spent a decade in and out of British prisons.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                207
+              </td>
+              <td>
+                A Touch of Frost
+              </td>
+              <td>
+                Crime drama starring David Jason.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1707
+              </td>
+              <td>
+                Abducted
+              </td>
+              <td>
+                The issue of child abduction and three parents struggling to get their children back.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1373
+              </td>
+              <td>
+                Ade At Sea
+              </td>
+              <td>
+                New series in which Adrian Edmondson explores Britain's maritime past and its influence.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                523
+              </td>
+              <td>
+                Ade in Britain
+              </td>
+              <td>
+                Adrian Edmondson travels round Britain in search of foods and traditions.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1767
+              </td>
+              <td>
+                After Midnight
+              </td>
+              <td>
+                After Midnight
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                557
+              </td>
+              <td>
+                After They Were Famous
+              </td>
+              <td>
+                After They Were Famous
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                154
+              </td>
+              <td>
+                Agatha Christie's Marple
+              </td>
+              <td>
+                Series based on Agatha Christie's amateur sleuth, with Julia McKenzie.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                476
+              </td>
+              <td>
+                Agatha Christie's Poirot
+              </td>
+              <td>
+                Drama featuring Agatha Christie's Belgian detective, Hercule Poirot.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1558
+              </td>
+              <td>
+                Ain't Misbehavin'
+              </td>
+              <td>
+                Robson Green and Jerome Flynn star in this wartime comedy drama.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1760
+              </td>
+              <td>
+                Alexander Armstrong in the Land of the Midnight Sun
+              </td>
+              <td>
+                Alexander Armstrong journeys halfway around the Arctic Circle.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                90
+              </td>
+              <td>
+                All Star Family Fortunes
+              </td>
+              <td>
+                Vernon Kay presents the celebrity family quiz show.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                2
+              </td>
+              <td>
+                All Star Mr & Mrs
+              </td>
+              <td>
+                Three celebrity couples try to win cash for their chosen charity.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1551
+              </td>
+              <td>
+                All Stars
+              </td>
+              <td>
+                Dance comedy starring Theo Stevenson and Akai Osei-Mansfield.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1720
+              </td>
+              <td>
+                Along Came Polly
+              </td>
+              <td>
+                Along Came Polly
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1389
+              </td>
+              <td>
+                Amazing Greys
+              </td>
+              <td>
+                Paddy McGuinness and Angela Rippon present as young challengers take on senior citizens.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1599
+              </td>
+              <td>
+                Anatole
+              </td>
+              <td>
+                Anatole is a charming but excitable French mouse who lives under the streets of Paris.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1745
+              </td>
+              <td>
+                And Here is the News...
+              </td>
+              <td>
+                Britain’s newsreaders reveal what life is like behind the desk, and how it has changed.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                597
+              </td>
+              <td>
+                Animal 999
+              </td>
+              <td>
+                Scotland's leading animal charity allows access to the work of its inspectors.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1256
+              </td>
+              <td>
+                Animal Heroes
+              </td>
+              <td>
+                Series about the Royal Army Veterinary Corps and the bond between soldiers and animals.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1717
+              </td>
+              <td>
+                Animal Mums
+              </td>
+              <td>
+                Enthralling natural world series about the challenge of motherhood in the wild.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1152
+              </td>
+              <td>
+                Ant & Dec's Saturday Night Takeaway
+              </td>
+              <td>
+                Ant and Dec return with their live family entertainment show.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1607
+              </td>
+              <td>
+                Arthur & George
+              </td>
+              <td>
+                Drama based on the relationship between Sir Arthur Conan Doyle and George Edalji.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                512
+              </td>
+              <td>
+                Arts & Parts
+              </td>
+              <td>
+                NULL
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1371
+              </td>
+              <td>
+                Auf Wiedersehen My Pet
+              </td>
+              <td>
+                Series following pet owners who are forced to find new homes for their much-loved animals.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1586
+              </td>
+              <td>
+                Bad Builders Bang to Rights
+              </td>
+              <td>
+                Dominic Littlewood confronts dodgy builders and meets people whose lives they have ruined.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                1795
+              </td>
+              <td>
+                BAFTA Celebrates Downton Abbey
+              </td>
+              <td>
+                BAFTA honours Downton Abbey with a special award presented by Julie Walters.
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1879
+              </td>
+              <td>
+                Bang on the Money
+              </td>
+              <td>
+                Rickie Haywood Williams and Melvin Odoom host as two teams of friends battle it out.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1642
+              </td>
+              <td>
+                Bargain Fever Britain
+              </td>
+              <td>
+                A look at the changing face of UK retail - Costco, Motorpoint, Shoe Zone & Approved Food.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1877
+              </td>
+              <td>
+                Bargain Shop Wars
+              </td>
+              <td>
+                Series going behind the scenes of Britain's newest bargain chain Pep and Co.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1869
+              </td>
+              <td>
+                Barging Round Britain with John Sergeant
+              </td>
+              <td>
+                Series in which John Sergeant sets off along Britain's eight best canal journeys.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1697
+              </td>
+              <td>
+                BBQ Champ
+              </td>
+              <td>
+                Competition to find the UK's best BBQer with judges Adam Richman and Mark Blatchford.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1594
+              </td>
+              <td>
+                Bear Grylls: Mission Survive
+              </td>
+              <td>
+                Eight celebrities take a South African bush journey to learn the skills to survive.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="inactive"
+            >
+              <td>
+                3
+              </td>
+              <td>
+                Beat the Star
+              </td>
+              <td>
+                Beat the Star
+              </td>
+              <td>
+                no
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1788
+              </td>
+              <td>
+                Being Kevin Pietersen
+              </td>
+              <td>
+                Documentary about one of cricket's most colourful and controversial players.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                359
+              </td>
+              <td>
+                Benidorm
+              </td>
+              <td>
+                Comedy series set in Benidorm at the Solana all-inclusive resort.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1790
+              </td>
+              <td>
+                Beowulf: Return to the Shieldlands
+              </td>
+              <td>
+                An epic re-imagining of one of literature’s greatest and most enduring heroes, Beowulf.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1816
+              </td>
+              <td>
+                Best of the Year 2015
+              </td>
+              <td>
+                A look back at the best bits of local telly from the last 12 months.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1079
+              </td>
+              <td>
+                Best of Tom Weir
+              </td>
+              <td>
+                Series following author and broadcaster Tom Weir's travels in Scotland.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1838
+              </td>
+              <td>
+                Best Walks with a View with Julia Bradbury
+              </td>
+              <td>
+                Julia Bradbury takes us along on some of her favourite walks with the very best views.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="active"
+            >
+              <td>
+                1841
+              </td>
+              <td>
+                Big Box Little Box
+              </td>
+              <td>
+                Five households test the latest gadgets to find out if they are worth the money.
+              </td>
+              <td>
+                yes
+              </td>
+              <td
+                class="row-actions"
+              >
+                <button
+                  class="row-action row-action--edit"
+                >
+                  <svg>
+                    edit-solid.svg
+                  </svg>
+                  Edit
+                </button>
+                <button
+                  class="row-action row-action--delete"
+                >
+                  <svg>
+                    times-solid.svg
+                  </svg>
+                   Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      Attribution: Icons used are from Font Awesome in accordance with the terms of their
+      <a
+        href="https://fontawesome.com/license"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        licence
+      </a>
+    </footer>
+  </div>
+</DocumentFragment>
+`;
