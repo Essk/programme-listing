@@ -15,4 +15,10 @@ export class DisplayList {
   getProgrammeByIndex(index) {
     return this.programmeList[index] || {};
   }
+  getProgrammeById(id) {
+    const parsedId = parseInt(id);
+    return (
+      this.programmeList.find(programme => programme.id === parsedId) || {}
+    );
+  }
 }

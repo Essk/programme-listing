@@ -46,8 +46,22 @@ describe('DisplayList', () => {
         name: '30 Years of Taggart on TV',
       });
     });
-  it.todo('can add a programme');
-  it.todo('can delete a programme');
-  it.todo('can update a prgramme');
+    it('can return a programme by id', () => {
+      const expectedResult = {
+        active: false,
+        description: "Documentary celebrating Taggart's 30th anniversary.",
+        id: 1262,
+        name: '30 Years of Taggart on TV',
+      };
+      let result = displayList.getProgrammeById(1262);
+      expect(result).toEqual(expectedResult);
+      result = displayList.getProgrammeById('1262');
+      expect(result).toEqual(expectedResult);
+      result = displayList.getProgrammeById('invalidId');
+      expect(result).toEqual({});
+    });
+    it.todo('can add a programme');
+    it.todo('can delete a programme');
+    it.todo('can update a prgramme');
   });
 });
