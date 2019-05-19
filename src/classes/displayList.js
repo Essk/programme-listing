@@ -63,6 +63,7 @@ export class DisplayList {
       this.programmeList.find(programme => programme.id === parsedId) || {}
     );
   }
+
   /**
    * @param {Programme} newProgramme to be added
    * @return {number} id of the programme
@@ -72,5 +73,20 @@ export class DisplayList {
     newProgramme.id = newId;
     this.programmeList.push(newProgramme);
     return newId;
+  }
+
+  /**
+   * @param {number} id of programme to be deleted
+   * @return {ProgrammeWithId || object} programme object that was deleted or empty object
+   */
+  deleteProgramme(id) {
+    const idx = this.programmeList.findIndex(
+      programme => programme.id === parseInt(id)
+    );
+    if (idx === -1) {
+      return {};
+    }
+    const deleted = this.programmeList.splice(idx, 1);
+    return deleted[0];
   }
 }
