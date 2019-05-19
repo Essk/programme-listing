@@ -12,6 +12,15 @@ export class DisplayList {
       };
     });
   }
+  /**
+   * stubbing the fact that we'd probably have an external service checking this against a DB in a real app
+   */
+  fetchNewId() {
+    const existingIDs = this.programmeList.map(programme =>
+      parseInt(programme.id)
+    );
+    return existingIDs[existingIDs.length - 1] + 1;
+  }
   getProgrammeByIndex(index) {
     return this.programmeList[index] || {};
   }

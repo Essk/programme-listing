@@ -35,6 +35,17 @@ describe('DisplayList', () => {
       });
     });
   });
+  describe('fetchNewId', () => {
+    it('should return an integer that is not already used as an id in the programmes', () => {
+      const displayList = new DisplayList(programmes);
+      const newId = displayList.fetchNewId();
+      const existingIDs = displayList.programmeList.map(
+        programme => programme.id
+      );
+      expect(typeof newId).toBe('number');
+      expect(existingIDs.indexOf(newId)).toBe(-1);
+    });
+  });
   describe('CRUD functions', () => {
     const displayList = new DisplayList(programmes);
     it('can return a programme by index', () => {
