@@ -8,7 +8,7 @@ describe('DisplayList', () => {
   });
   it('contains a list of programmes', () => {
     const displayList = new DisplayList(programmes);
-    expect(displayList.programmes).toMatchSnapshot();
+    expect(displayList.programmeList).toMatchSnapshot();
   });
   describe('cleanUpInput', () => {
     const displayList = new DisplayList();
