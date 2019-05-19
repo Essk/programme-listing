@@ -94,6 +94,17 @@ describe('DisplayList', () => {
       expect(displayList.programmeList.length).toEqual(startLength - 1);
       expect(displayList.getProgrammeById(1553)).toEqual({});
     });
-    it.todo('can update a prgramme');
+    it('can update a programme', () => {
+      const alteredProgramme = {
+        active: true,
+        description: 'Crime drama starring the fantastic David Jason.',
+        name: 'A Touch of Frost',
+      };
+      const id = 207;
+      displayList.updateProgramme(id, alteredProgramme);
+      expect(displayList.getProgrammeById(id)).toEqual(
+        expect.objectContaining(alteredProgramme)
+      );
+    });
   });
 });

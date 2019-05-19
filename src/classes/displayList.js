@@ -89,4 +89,21 @@ export class DisplayList {
     const deleted = this.programmeList.splice(idx, 1);
     return deleted[0];
   }
+  /**
+   *
+   * @param {number|string} id
+   * @param {Programme} programme
+   * @returns {ProgrammeWithId|object}
+   */
+  updateProgramme(id, programme) {
+    const idx = this.programmeList.findIndex(
+      programme => programme.id === parseInt(id)
+    );
+    if (idx === -1) {
+      return {};
+    }
+    programme.id = id;
+    const oldVersion = this.programmeList.splice(idx, 1, programme)[0];
+    return oldVersion;
+  }
 }
