@@ -71,7 +71,16 @@ describe('DisplayList', () => {
       result = displayList.getProgrammeById('invalidId');
       expect(result).toEqual({});
     });
-    it.todo('can add a programme');
+    it('can add a programme', () => {
+      const newProgramme = {
+        name: 'Pimp my Doge',
+        description: 'Such exciting, so wow',
+        active: true,
+      };
+      const newProgrammeId = displayList.addProgramme(newProgramme);
+      const programmeInList = displayList.getProgrammeById(newProgrammeId);
+      expect(programmeInList).toEqual(expect.objectContaining(newProgramme));
+    });
     it.todo('can delete a programme');
     it.todo('can update a prgramme');
   });

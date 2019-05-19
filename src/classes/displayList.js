@@ -63,4 +63,14 @@ export class DisplayList {
       this.programmeList.find(programme => programme.id === parsedId) || {}
     );
   }
+  /**
+   * @param {Programme} newProgramme to be added
+   * @return {number} id of the programme
+   */
+  addProgramme(newProgramme) {
+    const newId = this.fetchNewId();
+    newProgramme.id = newId;
+    this.programmeList.push(newProgramme);
+    return newId;
+  }
 }
