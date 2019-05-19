@@ -12,4 +12,7 @@ export class DisplayList {
       };
     });
   }
+  getProgrammeByIndex(index) {
+    return this.programmeList[index] || {};
+  }
 }
