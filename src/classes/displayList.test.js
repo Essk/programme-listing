@@ -77,20 +77,14 @@ describe('DisplayList', () => {
         description: 'Such exciting, so wow',
         active: true,
       };
-      const newProgrammeId = displayList.addProgramme(newProgramme);
-      const programmeInList = displayList.getProgrammeById(newProgrammeId);
-      expect(programmeInList).toEqual(expect.objectContaining(newProgramme));
+      const updatedInstance = displayList.addProgramme(newProgramme);
+      expect(updatedInstance.programmeList).toEqual(
+        expect.arrayContaining([newProgramme])
+      );
     });
     it('can delete a programme', () => {
       const startLength = displayList.programmeList.length;
       const deleted = displayList.deleteProgramme(1553);
-      expect(deleted).toEqual({
-        active: false,
-        description:
-          'Bradley Walsh hosts a festive spectacular with a variety of guests.',
-        id: 1553,
-        name: 'A Christmas Cracker',
-      });
       expect(displayList.programmeList.length).toEqual(startLength - 1);
       expect(displayList.getProgrammeById(1553)).toEqual({});
     });

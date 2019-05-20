@@ -72,7 +72,7 @@ export class DisplayList {
     const newId = this.fetchNewId();
     newProgramme.id = newId;
     this.programmeList.push(newProgramme);
-    return newId;
+    return this;
   }
 
   /**
@@ -86,8 +86,8 @@ export class DisplayList {
     if (idx === -1) {
       return {};
     }
-    const deleted = this.programmeList.splice(idx, 1);
-    return deleted[0];
+    this.programmeList.splice(idx, 1);
+    return this;
   }
   /**
    *
@@ -103,7 +103,7 @@ export class DisplayList {
       return {};
     }
     programme.id = id;
-    const oldVersion = this.programmeList.splice(idx, 1, programme)[0];
-    return oldVersion;
+    this.programmeList.splice(idx, 1, programme);
+    return this;
   }
 }

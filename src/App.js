@@ -10,11 +10,17 @@ const displayList = new DisplayList(programmes);
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { displayList: displayList };
+    this.state = {
+      displayList: displayList,
+      showModal: false,
+      modalContent: null,
+    };
   }
   render() {
     return (
       <div className="App">
+        {this.state.showModal ? <div> HAI </div> : null}
+
         <header className="App-header">
           <h1>My Awesome Programme List</h1>
         </header>
@@ -41,10 +47,9 @@ class App extends React.Component {
     );
   }
   handleDelete = programme => {
-    // hmmm not sure about the 'rightness' of this approach, but it has the desired effect
-    let newList = this.state.displayList;
-    newList.deleteProgramme(programme.id);
-    this.setState({ displayList: newList });
+    this.setState({
+      displayList: this.state.displayList.deleteProgramme(programme.id),
+    });
   };
 }
 
