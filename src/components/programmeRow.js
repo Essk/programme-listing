@@ -1,6 +1,6 @@
 import React from 'react';
-import { ReactComponent as EditIcon } from '../edit-solid.svg';
-import { ReactComponent as CrossIcon } from '../times-solid.svg';
+import { ReactComponent as EditIcon } from '../assets/pencil.svg';
+import { ReactComponent as CrossIcon } from '../assets/x.svg';
 import { ActionButton } from './actionButton';
 
 export const ProgrammeRow = props => (

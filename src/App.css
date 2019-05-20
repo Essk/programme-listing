@@ -43,18 +43,45 @@ table.programmes td,table.programmes th {
   text-align: left;
   vertical-align: top;
 }
-table.programmes td.row-actions{
+.row-actions{
   display: flex;
-  width: 100px;
+  width: 160px;
   background-color: white;
 }
-table.programmes td.row-actions .row-action{
+.row-action{
+  text-align: center;
   flex-basis: 50%;
-  height: 60px;
-  display: block;
-  padding: 0 ;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px ;
   background-color: white;
   border: none;
   cursor: pointer;
   margin: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.row-action svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  transition: 0.3s
+}
+.row-action:hover, .row-action:focus{
+  box-shadow: -2px 2px 4px 0px #c5c5d5;
+}
+.row-action--delete:hover {
+  color: red;
+}
+.row-action--delete:hover svg{
+  fill: red;
+}
+.row-action--edit:hover {
+  color: #065bb4;
+  
+}
+.row-action--edit:hover svg{
+  fill: #065bb4;
 }

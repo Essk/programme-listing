@@ -36,17 +36,7 @@ class App extends React.Component {
             </ProgrammeTable>
           </section>
         </main>
-        <footer>
-          Attribution: Icons used are from Font Awesome in accordance with the
-          terms of their
-          <a
-            target="_blank"
-            href="https://fontawesome.com/license"
-            rel="noopener noreferrer"
-          >
-            licence
-          </a>
-        </footer>
+        <footer />
       </div>
     );
   }
