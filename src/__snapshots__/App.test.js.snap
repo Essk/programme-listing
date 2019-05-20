@@ -58,8 +58,15 @@ exports[`App renders 1`] = `
               <td>
                 Another look at some of the nation's oldest drivers, including 102-year-old Harry Kartz.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -68,7 +75,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -78,7 +85,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -98,8 +105,15 @@ exports[`App renders 1`] = `
               <td>
                 Quiz show in which contestants have their heart rate constantly monitored.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -108,7 +122,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -118,7 +132,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -138,8 +152,15 @@ exports[`App renders 1`] = `
               <td>
                 Documentary celebrating the 50th anniversary of England hosting and winning the World Cup.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -148,7 +169,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -158,7 +179,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -178,8 +199,15 @@ exports[`App renders 1`] = `
               <td>
                 Documentary celebrating Taggart's 30th anniversary.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -188,7 +216,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -198,7 +226,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -218,8 +246,15 @@ exports[`App renders 1`] = `
               <td>
                 Bradley Walsh hosts a festive spectacular with a variety of guests.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -228,7 +263,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -238,7 +273,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -258,8 +293,15 @@ exports[`App renders 1`] = `
               <td>
                 Jason Manford presents this end-of-year comedy review show.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -268,7 +310,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -278,7 +320,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -298,8 +340,15 @@ exports[`App renders 1`] = `
               <td>
                 Griff Rhys Jones explores his native land.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -308,7 +357,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -318,7 +367,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -338,8 +387,15 @@ exports[`App renders 1`] = `
               <td>
                 Selena Scott explores the challenges facing the  the National Trust.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -348,7 +404,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -358,7 +414,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -378,8 +434,15 @@ exports[`App renders 1`] = `
               <td>
                 Phillip Schofield and Amanda Holden host the annual military awards ceremony.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -388,7 +451,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -398,7 +461,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -418,8 +481,15 @@ exports[`App renders 1`] = `
               <td>
                 Story of a real-life Scottish criminal who spent a decade in and out of British prisons.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -428,7 +498,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -438,7 +508,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -458,8 +528,15 @@ exports[`App renders 1`] = `
               <td>
                 Crime drama starring David Jason.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -468,7 +545,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -478,7 +555,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -498,8 +575,15 @@ exports[`App renders 1`] = `
               <td>
                 The issue of child abduction and three parents struggling to get their children back.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -508,7 +592,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -518,7 +602,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -538,8 +622,15 @@ exports[`App renders 1`] = `
               <td>
                 New series in which Adrian Edmondson explores Britain's maritime past and its influence.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -548,7 +639,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -558,7 +649,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -578,8 +669,15 @@ exports[`App renders 1`] = `
               <td>
                 Adrian Edmondson travels round Britain in search of foods and traditions.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -588,7 +686,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -598,7 +696,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -618,8 +716,15 @@ exports[`App renders 1`] = `
               <td>
                 After Midnight
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -628,7 +733,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -638,7 +743,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -658,8 +763,15 @@ exports[`App renders 1`] = `
               <td>
                 After They Were Famous
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -668,7 +780,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -678,7 +790,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -698,8 +810,15 @@ exports[`App renders 1`] = `
               <td>
                 Series based on Agatha Christie's amateur sleuth, with Julia McKenzie.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -708,7 +827,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -718,7 +837,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -738,8 +857,15 @@ exports[`App renders 1`] = `
               <td>
                 Drama featuring Agatha Christie's Belgian detective, Hercule Poirot.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -748,7 +874,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -758,7 +884,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -778,8 +904,15 @@ exports[`App renders 1`] = `
               <td>
                 Robson Green and Jerome Flynn star in this wartime comedy drama.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -788,7 +921,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -798,7 +931,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -818,8 +951,15 @@ exports[`App renders 1`] = `
               <td>
                 Alexander Armstrong journeys halfway around the Arctic Circle.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -828,7 +968,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -838,7 +978,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -858,8 +998,15 @@ exports[`App renders 1`] = `
               <td>
                 Vernon Kay presents the celebrity family quiz show.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -868,7 +1015,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -878,7 +1025,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -898,8 +1045,15 @@ exports[`App renders 1`] = `
               <td>
                 Three celebrity couples try to win cash for their chosen charity.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -908,7 +1062,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -918,7 +1072,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -938,8 +1092,15 @@ exports[`App renders 1`] = `
               <td>
                 Dance comedy starring Theo Stevenson and Akai Osei-Mansfield.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -948,7 +1109,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -958,7 +1119,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -978,8 +1139,15 @@ exports[`App renders 1`] = `
               <td>
                 Along Came Polly
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -988,7 +1156,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -998,7 +1166,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1018,8 +1186,15 @@ exports[`App renders 1`] = `
               <td>
                 Paddy McGuinness and Angela Rippon present as young challengers take on senior citizens.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1028,7 +1203,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1038,7 +1213,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1058,8 +1233,15 @@ exports[`App renders 1`] = `
               <td>
                 Anatole is a charming but excitable French mouse who lives under the streets of Paris.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1068,7 +1250,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1078,7 +1260,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1098,8 +1280,15 @@ exports[`App renders 1`] = `
               <td>
                 Britain’s newsreaders reveal what life is like behind the desk, and how it has changed.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1108,7 +1297,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1118,7 +1307,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1138,8 +1327,15 @@ exports[`App renders 1`] = `
               <td>
                 Scotland's leading animal charity allows access to the work of its inspectors.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1148,7 +1344,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1158,7 +1354,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1178,8 +1374,15 @@ exports[`App renders 1`] = `
               <td>
                 Series about the Royal Army Veterinary Corps and the bond between soldiers and animals.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1188,7 +1391,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1198,7 +1401,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1218,8 +1421,15 @@ exports[`App renders 1`] = `
               <td>
                 Enthralling natural world series about the challenge of motherhood in the wild.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1228,7 +1438,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1238,7 +1448,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1258,8 +1468,15 @@ exports[`App renders 1`] = `
               <td>
                 Ant and Dec return with their live family entertainment show.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1268,7 +1485,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1278,7 +1495,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1298,8 +1515,15 @@ exports[`App renders 1`] = `
               <td>
                 Drama based on the relationship between Sir Arthur Conan Doyle and George Edalji.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1308,7 +1532,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1318,7 +1542,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1338,8 +1562,15 @@ exports[`App renders 1`] = `
               <td>
                 NULL
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1348,7 +1579,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1358,7 +1589,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1378,8 +1609,15 @@ exports[`App renders 1`] = `
               <td>
                 Series following pet owners who are forced to find new homes for their much-loved animals.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1388,7 +1626,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1398,7 +1636,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1418,8 +1656,15 @@ exports[`App renders 1`] = `
               <td>
                 Dominic Littlewood confronts dodgy builders and meets people whose lives they have ruined.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1428,7 +1673,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1438,7 +1683,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1458,8 +1703,15 @@ exports[`App renders 1`] = `
               <td>
                 BAFTA honours Downton Abbey with a special award presented by Julie Walters.
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1468,7 +1720,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1478,7 +1730,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1498,8 +1750,15 @@ exports[`App renders 1`] = `
               <td>
                 Rickie Haywood Williams and Melvin Odoom host as two teams of friends battle it out.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1508,7 +1767,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1518,7 +1777,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1538,8 +1797,15 @@ exports[`App renders 1`] = `
               <td>
                 A look at the changing face of UK retail - Costco, Motorpoint, Shoe Zone & Approved Food.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1548,7 +1814,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1558,7 +1824,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1578,8 +1844,15 @@ exports[`App renders 1`] = `
               <td>
                 Series going behind the scenes of Britain's newest bargain chain Pep and Co.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1588,7 +1861,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1598,7 +1871,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1618,8 +1891,15 @@ exports[`App renders 1`] = `
               <td>
                 Series in which John Sergeant sets off along Britain's eight best canal journeys.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1628,7 +1908,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1638,7 +1918,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1658,8 +1938,15 @@ exports[`App renders 1`] = `
               <td>
                 Competition to find the UK's best BBQer with judges Adam Richman and Mark Blatchford.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1668,7 +1955,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1678,7 +1965,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1698,8 +1985,15 @@ exports[`App renders 1`] = `
               <td>
                 Eight celebrities take a South African bush journey to learn the skills to survive.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1708,7 +2002,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1718,7 +2012,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1738,8 +2032,15 @@ exports[`App renders 1`] = `
               <td>
                 Beat the Star
               </td>
-              <td>
-                no
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  circle-slash.svg
+                </svg>
+                <span>
+                  No
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1748,7 +2049,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1758,7 +2059,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1778,8 +2079,15 @@ exports[`App renders 1`] = `
               <td>
                 Documentary about one of cricket's most colourful and controversial players.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1788,7 +2096,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1798,7 +2106,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1818,8 +2126,15 @@ exports[`App renders 1`] = `
               <td>
                 Comedy series set in Benidorm at the Solana all-inclusive resort.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1828,7 +2143,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1838,7 +2153,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1858,8 +2173,15 @@ exports[`App renders 1`] = `
               <td>
                 An epic re-imagining of one of literature’s greatest and most enduring heroes, Beowulf.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1868,7 +2190,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1878,7 +2200,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1898,8 +2220,15 @@ exports[`App renders 1`] = `
               <td>
                 A look back at the best bits of local telly from the last 12 months.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1908,7 +2237,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1918,7 +2247,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1938,8 +2267,15 @@ exports[`App renders 1`] = `
               <td>
                 Series following author and broadcaster Tom Weir's travels in Scotland.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1948,7 +2284,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1958,7 +2294,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -1978,8 +2314,15 @@ exports[`App renders 1`] = `
               <td>
                 Julia Bradbury takes us along on some of her favourite walks with the very best views.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -1988,7 +2331,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -1998,7 +2341,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -2018,8 +2361,15 @@ exports[`App renders 1`] = `
               <td>
                 Five households test the latest gadgets to find out if they are worth the money.
               </td>
-              <td>
-                yes
+              <td
+                class="cell-active"
+              >
+                <svg>
+                  check.svg
+                </svg>
+                <span>
+                  Yes
+                </span>
               </td>
               <td
                 class="row-actions"
@@ -2028,7 +2378,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--edit"
                 >
                   <svg>
-                    edit-solid.svg
+                    pencil.svg
                   </svg>
                   <span>
                     Edit
@@ -2038,7 +2388,7 @@ exports[`App renders 1`] = `
                   class="row-action row-action--delete"
                 >
                   <svg>
-                    times-solid.svg
+                    x.svg
                   </svg>
                   <span>
                     Delete
@@ -2050,16 +2400,7 @@ exports[`App renders 1`] = `
         </table>
       </section>
     </main>
-    <footer>
-      Attribution: Icons used are from Font Awesome in accordance with the terms of their
-      <a
-        href="https://fontawesome.com/license"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        licence
-      </a>
-    </footer>
+    <footer />
   </div>
 </DocumentFragment>
 `;

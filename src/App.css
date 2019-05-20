@@ -41,12 +41,12 @@ table.programmes tr.inactive {
 table.programmes td,table.programmes th {
   padding: 1em;
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .row-actions{
   display: flex;
   width: 160px;
-  background-color: white;
+
 }
 .row-action{
   text-align: center;
@@ -84,4 +84,19 @@ table.programmes td,table.programmes th {
 }
 .row-action--edit:hover svg{
   fill: #065bb4;
+}
+
+table.programmes td.cell-active{
+  text-align: center;
+
+}
+table.programmes td.cell-active span{
+  display: block;
+    font-size: 12px;
+  text-transform: uppercase;
+}
+.cell-active svg{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
 }
