@@ -4,6 +4,7 @@ import programmes from './programmes.json';
 import { DisplayList } from './classes/displayList.js';
 import { ProgrammeTable } from './components/programmeTable.js';
 import { ProgrammeRow } from './components/programmeRow.js';
+import { Modal } from './components/modal.js';
 
 const displayList = new DisplayList(programmes);
 
@@ -13,13 +14,15 @@ class App extends React.Component {
     this.state = {
       displayList: new DisplayList(programmes),
       showModal: false,
-      modalContent: null,
+      modalContent: props => {},
     };
   }
   render() {
     return (
       <div className="App">
-        {this.state.showModal ? <div> HAI </div> : null}
+        {this.state.showModal ? (
+          <Modal close={this.closeModal}>{this.state.modalContent()}</Modal>
+        ) : null}
 
         <header className="App-header">
           <h1>My Awesome Programme List</h1>
@@ -46,6 +49,9 @@ class App extends React.Component {
       </div>
     );
   }
+  closeModal = () => {
+    this.setState({ showModal: false });
+  };
   handleDelete = programme => {
     this.setState({
       displayList: this.state.displayList.deleteProgramme(programme.id),
