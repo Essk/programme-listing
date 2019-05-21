@@ -78,28 +78,4 @@ class App extends React.Component {
   };
 }
 
-/**
-
- */
 export default App;
-
-/**
- 
-({ programme, confirm, cancel }) => (
-          <div className="modal-content confirm-delete">
-            <p>
-              Delete programme {programme.id}: {programme.name}?
-            </p>
-            <div className="buttons">
-              <button className="" onClick={confirm}>
-                Confirm
-              </button>
-              <button className="" onClick={cancel}>
-                Cancel
-              </button>
-            </div>
-          </div>
-        );
-
- 
- */
