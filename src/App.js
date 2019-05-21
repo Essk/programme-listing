@@ -4,9 +4,8 @@ import programmes from './programmes.json';
 import { DisplayList } from './classes/displayList.js';
 import { ProgrammeTable } from './components/programmeTable.js';
 import { ProgrammeRow } from './components/programmeRow.js';
+import { modalContentConfirmDelete } from './components/modalContentConfirmDelete.js';
 import { Modal } from './components/modal.js';
-
-const displayList = new DisplayList(programmes);
 
 class App extends React.Component {
   constructor(props) {
@@ -53,6 +52,26 @@ class App extends React.Component {
     this.setState({ showModal: false });
   };
   handleDelete = programme => {
+    const modalContentProps = {
+      programme: programme,
+      title: 'Delete Programme',
+      confirm: () => {
+        this.closeModal();
+        this.doDelete(programme);
+      },
+      cancel: () => {
+        this.closeModal();
+      },
+    };
+    this.setState({
+      showModal: true,
+      modalContent: () => {
+        const cpt = modalContentConfirmDelete;
+        return cpt(modalContentProps);
+      },
+    });
+  };
+  doDelete = programme => {
     this.setState({
       displayList: this.state.displayList.deleteProgramme(programme.id),
     });
@@ -63,3 +82,24 @@ class App extends React.Component {
 
  */
 export default App;
+
+/**
+ 
+({ programme, confirm, cancel }) => (
+          <div className="modal-content confirm-delete">
+            <p>
+              Delete programme {programme.id}: {programme.name}?
+            </p>
+            <div className="buttons">
+              <button className="" onClick={confirm}>
+                Confirm
+              </button>
+              <button className="" onClick={cancel}>
+                Cancel
+              </button>
+            </div>
+          </div>
+        );
+
+ 
+ */
