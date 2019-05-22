@@ -49,8 +49,8 @@ class App extends React.Component {
                   return this.handleSearch(event);
                 }}
               />
-            <BaseButton
-              className="ui-button ui-button--icon ui-button--large"
+              <BaseButton
+                className="ui-button ui-button--icon ui-button--large"
                 action={this.handleClearSearch}
               >
                 {' '}
@@ -73,7 +73,7 @@ class App extends React.Component {
                 <ProgrammeRow
                   programme={programme}
                   key={programme.id}
-                  delete={this.handleDelete}
+                  deleteAction={this.handleDelete}
                 />
               ))}
             </ProgrammeTable>
@@ -162,6 +162,10 @@ class App extends React.Component {
     let displayList = this.state.displayList.search(search);
     this.setState({ search, displayList });
   };
+  doDelete(programme) {
+    const displayList = this.state.displayList.deleteProgramme(programme.id);
+    this.setState({ displayList });
+  }
   doAdd(newProgramme) {
     const displayList = this.state.displayList.addProgramme(newProgramme);
     this.setState({ displayList });

@@ -23,7 +23,6 @@ export class DisplayList {
         })
       : [];
   }
-
   /**
    *
    * @param {object} rawInput needs to have a results array

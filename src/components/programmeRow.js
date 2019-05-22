@@ -5,25 +5,32 @@ import { ReactComponent as CheckIcon } from '../assets/check.svg';
 import { ReactComponent as CircleSlashIcon } from '../assets/circle-slash.svg';
 import { ActionButton } from './actionButton';
 
+export const ProgrammeRow = ({ programme, deleteAction }) => (
+  <tr
+    className={[programme.active ? 'active' : 'inactive']}
     hidden={!programme.show}
+  >
+    <td>{programme.id}</td>
+    <td>{programme.name}</td>
+    <td>{programme.description}</td>
     <td className="cell-active">
-      {props.programme.active ? <CheckIcon /> : <CircleSlashIcon />}
-      <span>{props.programme.active ? 'Yes' : 'No'}</span>
+      {programme.active ? <CheckIcon /> : <CircleSlashIcon />}
+      <span>{programme.active ? 'Yes' : 'No'}</span>
     </td>
     <td className="row-actions">
       <ActionButton
         type="edit"
         label="Edit"
         icon={<EditIcon />}
-        action={props.delete}
-        programme={props.programme}
+        action={null}
+        programme={programme}
       />
       <ActionButton
         type="delete"
         label="Delete"
         icon={<CrossIcon />}
-        action={props.delete}
-        programme={props.programme}
+        action={deleteAction}
+        programme={programme}
       />
     </td>
   </tr>
