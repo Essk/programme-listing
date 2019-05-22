@@ -158,3 +158,10 @@ table.programmes td.cell-active span{
   top: 12px;
   width: 24px;
 }
+
+#extras{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: -2px;
+}

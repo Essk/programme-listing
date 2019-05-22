@@ -8,6 +8,7 @@ import { modalContentConfirmDelete } from './components/modalContentConfirmDelet
 import { Modal } from './components/modal.js';
 import { BaseButton } from './components/baseButton';
 import { ReactComponent as PlusIcon } from './assets/plus.svg';
+import { ReactComponent as CrossIcon } from './assets/x.svg';
 import { modalContentAddProgramme } from './components/modalContentAddProgramme';
 class App extends React.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ class App extends React.Component {
       displayList: new DisplayList(programmes),
       showModal: false,
       modalContent: props => {},
+      search: '',
     };
   }
   render() {
@@ -36,6 +38,25 @@ class App extends React.Component {
           <h1>My Awesome Programme List</h1>
         </header>
         <main>
+          <section id="extras">
+            <div className="search">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                value={this.state.search}
+                onChange={event => {
+                  return this.handleSearch(event);
+                }}
+              />
+            <BaseButton
+              className="ui-button ui-button--icon ui-button--large"
+                action={this.handleClearSearch}
+              >
+                {' '}
+                <CrossIcon /> Clear search{' '}
+              </BaseButton>
+            </div>
             <BaseButton
               className="ui-button ui-button--icon ui-button--large"
               action={this.handleAdd}
@@ -130,6 +151,16 @@ class App extends React.Component {
       },
     });
   }
+  handleSearch({ target }) {
+    let search = this.state.search;
+    search = target.value;
+    let displayList = this.state.displayList.search(search);
+    this.setState({ search, displayList });
+  }
+  handleClearSearch = () => {
+    const search = '';
+    let displayList = this.state.displayList.search(search);
+    this.setState({ search, displayList });
   };
   doAdd(newProgramme) {
     const displayList = this.state.displayList.addProgramme(newProgramme);

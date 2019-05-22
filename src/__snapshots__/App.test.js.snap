@@ -20,7 +20,7 @@ exports[`App renders 1`] = `
           class="search"
         >
           <input
-        id="search"
+            id="search"
             name="search"
             type="text"
             value=""
@@ -37,7 +37,7 @@ exports[`App renders 1`] = `
         </div>
         <button
           class="button ui-button ui-button--icon ui-button--large"
-      >
+        >
           <svg>
             plus.svg
           </svg>

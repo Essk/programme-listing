@@ -5,11 +5,7 @@ import { ReactComponent as CheckIcon } from '../assets/check.svg';
 import { ReactComponent as CircleSlashIcon } from '../assets/circle-slash.svg';
 import { ActionButton } from './actionButton';
 
-export const ProgrammeRow = props => (
-  <tr className={props.programme.active ? 'active' : 'inactive'}>
-    <td>{props.programme.id}</td>
-    <td>{props.programme.name}</td>
-    <td>{props.programme.description}</td>
+    hidden={!programme.show}
     <td className="cell-active">
       {props.programme.active ? <CheckIcon /> : <CircleSlashIcon />}
       <span>{props.programme.active ? 'Yes' : 'No'}</span>

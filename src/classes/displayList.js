@@ -16,8 +16,14 @@
  */
 export class DisplayList {
   constructor(programmes) {
-    this.programmeList = programmes ? this.cleanUpInput(programmes) : [];
+    this.programmeList = programmes
+      ? this.cleanUpInput(programmes).map(p => {
+          p.show = true;
+          return p;
+        })
+      : [];
   }
+
   /**
    *
    * @param {object} rawInput needs to have a results array
@@ -104,6 +110,13 @@ export class DisplayList {
     }
     programme.id = id;
     this.programmeList.splice(idx, 1, programme);
+    return this;
+  }
+  search(str) {
+    this.programmeList = this.programmeList.map(programme => {
+      programme.show = programme.name.toLowerCase().includes(str.toLowerCase());
+      return programme;
+    });
     return this;
   }
 }
