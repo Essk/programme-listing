@@ -40,6 +40,7 @@ class App extends React.Component {
         <main>
           <section id="extras">
             <div className="search">
+              <label htmlFor="search">Search:</label>
               <input
                 type="text"
                 name="search"
@@ -54,11 +55,11 @@ class App extends React.Component {
                 action={this.handleClearSearch}
               >
                 {' '}
-                <CrossIcon /> Clear search{' '}
+                <CrossIcon /> Clear search
               </BaseButton>
             </div>
             <BaseButton
-              className="ui-button ui-button--icon ui-button--large"
+              className="ui-button ui-button--icon ui-button--large add-button"
               action={this.handleAdd}
             >
               <PlusIcon />
@@ -106,7 +107,7 @@ class App extends React.Component {
       },
     });
   };
-  resetSelectedProgramme() {
+  resetSelectedProgramme = () => {
     this.setState({
       selectedProgramme: {
         id: null,
@@ -115,13 +116,13 @@ class App extends React.Component {
         active: true,
       },
     });
-  }
-  updateSelectedProgramme(key, value) {
+  };
+  updateSelectedProgramme = (key, value) => {
     let selectedProgramme = this.state.selectedProgramme;
     selectedProgramme[key] = value;
     this.setState({ selectedProgramme });
-  }
-  handleAdd() {
+  };
+  handleAdd = () => {
     const modalContentProps = {
       programme: this.state.selectedProgramme,
       title: 'Add Programme',
@@ -150,27 +151,27 @@ class App extends React.Component {
         return cpt(modalContentProps);
       },
     });
-  }
-  handleSearch({ target }) {
+  };
+  handleSearch = ({ target }) => {
     let search = this.state.search;
     search = target.value;
     let displayList = this.state.displayList.search(search);
     this.setState({ search, displayList });
-  }
+  };
   handleClearSearch = () => {
     const search = '';
     let displayList = this.state.displayList.search(search);
     this.setState({ search, displayList });
   };
-  doDelete(programme) {
+  doDelete = programme => {
     const displayList = this.state.displayList.deleteProgramme(programme.id);
     this.setState({ displayList });
-  }
-  doAdd(newProgramme) {
+  };
+  doAdd = newProgramme => {
     const displayList = this.state.displayList.addProgramme(newProgramme);
     this.setState({ displayList });
     this.resetSelectedProgramme();
-  }
+  };
 }
 
 export default App;

@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 .App {
    background-color: #282c34;
    min-height: 100vh;
@@ -106,6 +112,7 @@ table.programmes td.cell-active span{
     width: 100vw;
     height: 100vh;
     background: rgba(40,44,52,0.8);
+    z-index: 1;
 }
 .modal-close{
   position: absolute;
@@ -165,3 +172,31 @@ table.programmes td.cell-active span{
   justify-content: space-between;
   margin-right: -2px;
 }
+.search{
+  display: flex;
+  align-items: center;
+}
+.search input{
+  height: 39px;
+  border: 0;
+  padding: 0.5em;
+  font-size: 16px;
+      margin-left: 0.5em;
+}
+.search .ui-button, .add-button{
+  transition: 0.3s
+}
+.search .ui-button:hover, .search .ui-button:focus{
+  background-color: red;
+  color: white;
+} 
+.search .ui-button:hover svg, .search .ui-button:focus svg,
+.add-button:hover svg, .add-button:focus svg{
+  fill: white;
+}
+
+.add-button:hover, .add-button:focus{
+  background-color: darkgreen;
+  color: white;
+} 
+
