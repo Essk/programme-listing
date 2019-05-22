@@ -6,11 +6,20 @@ import { ProgrammeTable } from './components/programmeTable.js';
 import { ProgrammeRow } from './components/programmeRow.js';
 import { modalContentConfirmDelete } from './components/modalContentConfirmDelete.js';
 import { Modal } from './components/modal.js';
-
+import { BaseButton } from './components/baseButton';
+import { ReactComponent as PlusIcon } from './assets/plus.svg';
+import { modalContentAddProgramme } from './components/modalContentAddProgramme';
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      selectedProgramme: {
+        id: null,
+        name: '',
+        description: '',
+        active: true,
+        show: true,
+      },
       displayList: new DisplayList(programmes),
       showModal: false,
       modalContent: props => {},
@@ -27,8 +36,13 @@ class App extends React.Component {
           <h1>My Awesome Programme List</h1>
         </header>
         <main>
-          <section id="search">
-            <p>search goes here</p>
+            <BaseButton
+              className="ui-button ui-button--icon ui-button--large"
+              action={this.handleAdd}
+            >
+              <PlusIcon />
+              Add Programme
+            </BaseButton>
           </section>
           <section id="data">
             <ProgrammeTable
@@ -71,11 +85,57 @@ class App extends React.Component {
       },
     });
   };
-  doDelete = programme => {
+  resetSelectedProgramme() {
     this.setState({
-      displayList: this.state.displayList.deleteProgramme(programme.id),
+      selectedProgramme: {
+        id: null,
+        name: '',
+        description: '',
+        active: true,
+      },
     });
+  }
+  updateSelectedProgramme(key, value) {
+    let selectedProgramme = this.state.selectedProgramme;
+    selectedProgramme[key] = value;
+    this.setState({ selectedProgramme });
+  }
+  handleAdd() {
+    const modalContentProps = {
+      programme: this.state.selectedProgramme,
+      title: 'Add Programme',
+      updateName: ({ target }) => {
+        this.updateSelectedProgramme('name', target.value);
+      },
+      updateDescription: ({ target }) => {
+        this.updateSelectedProgramme('description', target.value);
+      },
+      updateActive: ({ target }) => {
+        this.updateSelectedProgramme('active', target.checked);
+      },
+      confirm: () => {
+        this.closeModal();
+        this.doAdd(this.state.selectedProgramme);
+      },
+      cancel: () => {
+        this.resetSelectedProgramme();
+        this.closeModal();
+      },
+    };
+    this.setState({
+      showModal: true,
+      modalContent: () => {
+        const cpt = modalContentAddProgramme;
+        return cpt(modalContentProps);
+      },
+    });
+  }
   };
+  doAdd(newProgramme) {
+    const displayList = this.state.displayList.addProgramme(newProgramme);
+    this.setState({ displayList });
+    this.resetSelectedProgramme();
+  }
 }
 
 export default App;

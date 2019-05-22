@@ -14,11 +14,35 @@ exports[`App renders 1`] = `
     </header>
     <main>
       <section
-        id="search"
+        id="extras"
       >
-        <p>
-          search goes here
-        </p>
+        <div
+          class="search"
+        >
+          <input
+        id="search"
+            name="search"
+            type="text"
+            value=""
+          />
+          <button
+            class="button ui-button ui-button--icon ui-button--large"
+          >
+             
+            <svg>
+              x.svg
+            </svg>
+             Clear search 
+          </button>
+        </div>
+        <button
+          class="button ui-button ui-button--icon ui-button--large"
+      >
+          <svg>
+            plus.svg
+          </svg>
+          Add Programme
+        </button>
       </section>
       <section
         id="data"
