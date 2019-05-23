@@ -9,7 +9,8 @@ import { Modal } from './components/modal.js';
 import { IconButton } from './components/buttons/iconButton';
 import { ReactComponent as PlusIcon } from './assets/plus.svg';
 import { ReactComponent as CrossIcon } from './assets/x.svg';
-import { modalContentAddProgramme } from './components/modalContentAddProgramme';
+import { modalContentAddProgramme } from './components/modalContentAddProgramme.js';
+import { TextInput } from './components/form/textInput.js';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -40,21 +41,19 @@ class App extends React.Component {
         <main>
           <section id="extras">
             <div className="search">
-              <label htmlFor="search">Search:</label>
-              <input
-                type="text"
+              <TextInput
                 name="search"
-                id="search"
+                labelText="Search:"
                 value={this.state.search}
-                onChange={event => {
+                handleChange={event => {
                   return this.handleSearch(event);
                 }}
               />
-              <IconButton variant="destructive" action={this.handleClearSearch}>
+              <IconButton variant="text" action={this.handleClearSearch}>
                 <CrossIcon /> Clear search
               </IconButton>
             </div>
-            <IconButton variant="positive" action={this.handleAdd}>
+            <IconButton variant="text" action={this.handleAdd}>
               <PlusIcon />
               Add Programme
             </IconButton>

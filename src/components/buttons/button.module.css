@@ -12,6 +12,17 @@
     padding-left: 32px
 }
 
+.text{
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent;
+}
+.text:hover, .text:focus{
+   text-decoration: underline;
+}
+.text svg{
+    fill: white;
+}
 .iconButton svg{
   position: absolute;
   left: 8px;
