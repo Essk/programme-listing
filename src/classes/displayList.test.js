@@ -50,12 +50,14 @@ describe('DisplayList', () => {
     const displayList = new DisplayList(programmes);
     it('can return a programme by index', () => {
       const result = displayList.getProgrammeByIndex(3);
-      expect(result).toEqual({
-        active: false,
-        description: "Documentary celebrating Taggart's 30th anniversary.",
-        id: 1262,
-        name: '30 Years of Taggart on TV',
-      });
+      expect(result).toEqual(
+        expect.objectContaining({
+          active: false,
+          description: "Documentary celebrating Taggart's 30th anniversary.",
+          id: 1262,
+          name: '30 Years of Taggart on TV',
+        })
+      );
     });
     it('can return a programme by id', () => {
       const expectedResult = {
@@ -65,9 +67,9 @@ describe('DisplayList', () => {
         name: '30 Years of Taggart on TV',
       };
       let result = displayList.getProgrammeById(1262);
-      expect(result).toEqual(expectedResult);
+      expect(result).toEqual(expect.objectContaining(expectedResult));
       result = displayList.getProgrammeById('1262');
-      expect(result).toEqual(expectedResult);
+      expect(result).toEqual(expect.objectContaining(expectedResult));
       result = displayList.getProgrammeById('invalidId');
       expect(result).toEqual({});
     });
@@ -89,13 +91,14 @@ describe('DisplayList', () => {
       expect(displayList.getProgrammeById(1553)).toEqual({});
     });
     it('can update a programme', () => {
+      const id = 207;
       const alteredProgramme = {
+        id,
         active: true,
         description: 'Crime drama starring the fantastic David Jason.',
         name: 'A Touch of Frost',
       };
-      const id = 207;
-      displayList.updateProgramme(id, alteredProgramme);
+      displayList.updateProgramme(alteredProgramme);
       expect(displayList.getProgrammeById(id)).toEqual(
         expect.objectContaining(alteredProgramme)
       );
