@@ -6,7 +6,7 @@ import { ProgrammeTable } from './components/programmeTable.js';
 import { ProgrammeRow } from './components/programmeRow.js';
 import { modalContentConfirmDelete } from './components/modalContentConfirmDelete.js';
 import { Modal } from './components/modal.js';
-import { BaseButton } from './components/baseButton';
+import { IconButton } from './components/buttons/iconButton';
 import { ReactComponent as PlusIcon } from './assets/plus.svg';
 import { ReactComponent as CrossIcon } from './assets/x.svg';
 import { modalContentAddProgramme } from './components/modalContentAddProgramme';
@@ -50,21 +50,14 @@ class App extends React.Component {
                   return this.handleSearch(event);
                 }}
               />
-              <BaseButton
-                className="ui-button ui-button--icon ui-button--large"
-                action={this.handleClearSearch}
-              >
-                {' '}
+              <IconButton variant="destructive" action={this.handleClearSearch}>
                 <CrossIcon /> Clear search
-              </BaseButton>
+              </IconButton>
             </div>
-            <BaseButton
-              className="ui-button ui-button--icon ui-button--large add-button"
-              action={this.handleAdd}
-            >
+            <IconButton variant="positive" action={this.handleAdd}>
               <PlusIcon />
               Add Programme
-            </BaseButton>
+            </IconButton>
           </section>
           <section id="data">
             <ProgrammeTable

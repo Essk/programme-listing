@@ -1,5 +1,5 @@
 import React from 'react';
-import { BaseButton } from './baseButton';
+import { IconButton } from './buttons/iconButton';
 import { ReactComponent as CheckIcon } from '../assets/check.svg';
 import { ReactComponent as CircleSlashIcon } from '../assets/circle-slash.svg';
 
@@ -14,14 +14,12 @@ export const modalContentConfirmDelete = ({
     <h2 id="modalTitle">{title}</h2>
     <p>Really delete {programme.name}?</p>
     <div className="modal-buttons">
-      <BaseButton className="ui-button ui-button--icon" action={confirm}>
-        <CheckIcon />
-        <span>Confirm</span>
-      </BaseButton>
-      <BaseButton className="ui-button ui-button--icon" action={cancel}>
-        <CircleSlashIcon />
-        <span>Cancel</span>
-      </BaseButton>
+      <IconButton variant="positive" action={confirm}>
+        <CheckIcon /> Confirm
+      </IconButton>
+      <IconButton variant="neutral" action={cancel}>
+        <CircleSlashIcon /> Cancel
+      </IconButton>
     </div>
   </div>
 );

@@ -1,8 +1,9 @@
 import React from 'react';
+import button from './button.module.css';
 export const ActionButton = ({ type, label, icon, action, programme }) => {
   return (
     <button
-      className={`row-action row-action--${type}`}
+      className={`${button.actionButton} ${button[type]}`}
       onClick={() => action(programme)}
     >
       {icon}

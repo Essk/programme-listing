@@ -54,43 +54,7 @@ table.programmes td,table.programmes th {
   width: 160px;
 
 }
-.row-action{
-  text-align: center;
-  flex-basis: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 8px ;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  margin: 2px;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.row-action svg {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 8px;
-  transition: 0.3s
-}
-.row-action:hover, .row-action:focus{
-  box-shadow: -2px 2px 4px 0px #c5c5d5;
-}
-.row-action--delete:hover {
-  color: red;
-}
-.row-action--delete:hover svg{
-  fill: red;
-}
-.row-action--edit:hover {
-  color: #065bb4;
-  
-}
-.row-action--edit:hover svg{
-  fill: #065bb4;
-}
+
 
 table.programmes td.cell-active{
   text-align: center;
@@ -147,24 +111,6 @@ table.programmes td.cell-active span{
   margin-left: -4px;
 }
 
-.ui-button{
-  padding: 0.5em 1em;
-  font-size: 18px;
-  margin: 4px;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  position: relative;
-}
-.ui-button--icon{
-  padding-left: 32px
-}
-.ui-button--icon svg{
-  position: absolute;
-  left: 8px;
-  top: 12px;
-  width: 24px;
-}
 
 #extras{
   width: 100%;
@@ -176,27 +122,6 @@ table.programmes td.cell-active span{
   display: flex;
   align-items: center;
 }
-.search input{
-  height: 39px;
-  border: 0;
-  padding: 0.5em;
-  font-size: 16px;
-      margin-left: 0.5em;
-}
-.search .ui-button, .add-button{
-  transition: 0.3s
-}
-.search .ui-button:hover, .search .ui-button:focus{
-  background-color: red;
-  color: white;
-} 
-.search .ui-button:hover svg, .search .ui-button:focus svg,
-.add-button:hover svg, .add-button:focus svg{
-  fill: white;
-}
 
-.add-button:hover, .add-button:focus{
-  background-color: darkgreen;
-  color: white;
-} 
+
 

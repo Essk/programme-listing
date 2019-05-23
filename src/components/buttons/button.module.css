@@ -1,0 +1,57 @@
+.baseButton{
+  padding: 0.5em 1em;
+  font-size: 18px;
+  margin: 4px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  border: 2px solid white;
+}
+.iconButton{
+    padding-left: 32px
+}
+
+.iconButton svg{
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  width: 24px;
+}
+.destructive:hover, .destructive:focus{
+   border-color: red;
+
+}
+.positive:hover, .positive:focus{
+    border-color: green;
+}
+
+.neutral:hover, .neutral:focus{
+    border-color:#065bb4;
+}
+
+.actionButton{
+  text-align: center;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px ;
+  background-color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  margin: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.actionButton svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  transition: 0.3s
+}
+.actionButton:hover, .actionButton:focus{
+  box-shadow: -2px 2px 4px 0px #c5c5d5;
+}

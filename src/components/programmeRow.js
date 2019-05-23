@@ -3,7 +3,7 @@ import { ReactComponent as EditIcon } from '../assets/pencil.svg';
 import { ReactComponent as CrossIcon } from '../assets/x.svg';
 import { ReactComponent as CheckIcon } from '../assets/check.svg';
 import { ReactComponent as CircleSlashIcon } from '../assets/circle-slash.svg';
-import { ActionButton } from './actionButton';
+import { ActionButton } from './buttons/actionButton';
 
 export const ProgrammeRow = ({ programme, deleteAction }) => (
   <tr
@@ -19,14 +19,14 @@ export const ProgrammeRow = ({ programme, deleteAction }) => (
     </td>
     <td className="row-actions">
       <ActionButton
-        type="edit"
+        type="neutral"
         label="Edit"
         icon={<EditIcon />}
         action={null}
         programme={programme}
       />
       <ActionButton
-        type="delete"
+        type="destructive"
         label="Delete"
         icon={<CrossIcon />}
         action={deleteAction}
