@@ -6,7 +6,7 @@ import { ProgrammeTable } from './components/table/programmeTable.js';
 import { ProgrammeRow } from './components/table/programmeRow.js';
 import { Modal } from './components/modal/modal.js';
 import { modalContentConfirmDelete } from './components/modal/modalContentConfirmDelete.js';
-import { modalContentAddProgramme } from './components/modal/modalContentAddProgramme.js';
+import { modalContentAddEditProgramme } from './components/modal/modalContentAddEditProgramme.js';
 import { IconButton } from './components/buttons/iconButton';
 import { ReactComponent as PlusIcon } from './assets/plus.svg';
 import { ReactComponent as CrossIcon } from './assets/x.svg';
@@ -67,6 +67,7 @@ class App extends React.Component {
                   programme={programme}
                   key={programme.id}
                   deleteAction={this.handleDelete}
+                  editAction={this.handleEdit}
                 />
               ))}
             </ProgrammeTable>
@@ -139,10 +140,44 @@ class App extends React.Component {
     this.setState({
       showModal: true,
       modalContent: () => {
-        const cpt = modalContentAddProgramme;
+        const cpt = modalContentAddEditProgramme;
         return cpt(modalContentProps);
       },
     });
+  };
+  handleEdit = programme => {
+    this.setState({ selectedProgramme: programme });
+    setTimeout(() => {
+      // hax - we need a wee sec for the state change to register
+      const modalContentProps = {
+        programme: this.state.selectedProgramme,
+        title: 'Edit Programme',
+        updateName: ({ target }) => {
+          this.updateSelectedProgramme('name', target.value);
+        },
+        updateDescription: ({ target }) => {
+          this.updateSelectedProgramme('description', target.value);
+        },
+        updateActive: ({ target }) => {
+          this.updateSelectedProgramme('active', target.checked);
+        },
+        confirm: () => {
+          this.closeModal();
+          this.doEdit(this.state.selectedProgramme);
+        },
+        cancel: () => {
+          this.resetSelectedProgramme();
+          this.closeModal();
+        },
+      };
+      this.setState({
+        showModal: true,
+        modalContent: () => {
+          const cpt = modalContentAddEditProgramme;
+          return cpt(modalContentProps);
+        },
+      });
+    }, 0);
   };
   handleSearch = ({ target }) => {
     let search = this.state.search;
@@ -161,6 +196,11 @@ class App extends React.Component {
   };
   doAdd = newProgramme => {
     const displayList = this.state.displayList.addProgramme(newProgramme);
+    this.setState({ displayList });
+    this.resetSelectedProgramme();
+  };
+  doEdit = newProgramme => {
+    const displayList = this.state.displayList.updateProgramme(newProgramme);
     this.setState({ displayList });
     this.resetSelectedProgramme();
   };

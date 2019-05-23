@@ -7,7 +7,7 @@ import { TextAreaInput } from '../form/textAreaInput.js';
 import { Checkbox } from '../form/checkbox.js';
 
 /** note lowercase identifier to stop Babel interpreting the JSX too early - this implemtation is possibly too magical to be long term practical */
-export const modalContentAddProgramme = ({
+export const modalContentAddEditProgramme = ({
   programme,
   confirm,
   cancel,

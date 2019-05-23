@@ -5,7 +5,7 @@ import { ReactComponent as CheckIcon } from '../../assets/check.svg';
 import { ReactComponent as CircleSlashIcon } from '../../assets/circle-slash.svg';
 import { ActionButton } from '../buttons/actionButton';
 import table from './table.module.css';
-export const ProgrammeRow = ({ programme, deleteAction }) => (
+export const ProgrammeRow = ({ programme, deleteAction, editAction }) => (
   <tr
     className={[programme.active ? table.active : table.inactive]}
     hidden={!programme.show}
@@ -22,7 +22,9 @@ export const ProgrammeRow = ({ programme, deleteAction }) => (
         type="neutral"
         label="Edit"
         icon={<EditIcon />}
-        action={null}
+        action={programme => {
+          return editAction(programme);
+        }}
         programme={programme}
       />
       <ActionButton

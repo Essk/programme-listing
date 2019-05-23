@@ -100,14 +100,11 @@ export class DisplayList {
    * @param {Programme} programme
    * @returns {ProgrammeWithId|object}
    */
-  updateProgramme(id, programme) {
-    const idx = this.programmeList.findIndex(
-      programme => programme.id === parseInt(id)
-    );
+  updateProgramme(programme) {
+    const idx = this.programmeList.findIndex(row => row.id === programme.id);
     if (idx === -1) {
       return {};
     }
-    programme.id = id;
     this.programmeList.splice(idx, 1, programme);
     return this;
   }
