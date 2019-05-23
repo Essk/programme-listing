@@ -1,0 +1,41 @@
+.programmes{
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  color: #1a1a24;
+  border-collapse: collapse;
+}
+.programmes tr {
+  border-bottom: 1px solid #ececec;
+}
+.inactive {
+  background-color: #e3e3e3;
+  color: #565656;
+}
+.programmes td:not(.cellActive), .programmes th:not(:last-of-type) {
+  padding: 1em;
+  text-align: left;
+  vertical-align: middle;
+}
+.rowActions{
+  display: flex;
+  width: 160px;
+
+}
+
+
+.cellActive{
+  text-align: center;
+
+}
+.cellActive span{
+  display: block;
+    font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.cellActive svg{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}

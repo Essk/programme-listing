@@ -1,23 +1,23 @@
 import React from 'react';
-import { ReactComponent as EditIcon } from '../assets/pencil.svg';
-import { ReactComponent as CrossIcon } from '../assets/x.svg';
-import { ReactComponent as CheckIcon } from '../assets/check.svg';
-import { ReactComponent as CircleSlashIcon } from '../assets/circle-slash.svg';
-import { ActionButton } from './buttons/actionButton';
-
+import { ReactComponent as EditIcon } from '../../assets/pencil.svg';
+import { ReactComponent as CrossIcon } from '../../assets/x.svg';
+import { ReactComponent as CheckIcon } from '../../assets/check.svg';
+import { ReactComponent as CircleSlashIcon } from '../../assets/circle-slash.svg';
+import { ActionButton } from '../buttons/actionButton';
+import table from './table.module.css';
 export const ProgrammeRow = ({ programme, deleteAction }) => (
   <tr
-    className={[programme.active ? 'active' : 'inactive']}
+    className={[programme.active ? table.active : table.inactive]}
     hidden={!programme.show}
   >
     <td>{programme.id}</td>
     <td>{programme.name}</td>
     <td>{programme.description}</td>
-    <td className="cell-active">
+    <td className={table.cellActive}>
       {programme.active ? <CheckIcon /> : <CircleSlashIcon />}
       <span>{programme.active ? 'Yes' : 'No'}</span>
     </td>
-    <td className="row-actions">
+    <td className={table.rowActions}>
       <ActionButton
         type="neutral"
         label="Edit"

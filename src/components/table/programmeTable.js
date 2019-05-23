@@ -1,6 +1,7 @@
 import React from 'react';
+import table from './table.module.css';
 export const ProgrammeTable = props => (
-  <table className="programmes">
+  <table className={table.programmes}>
     <thead>
       <tr>
         <th>ID</th>
