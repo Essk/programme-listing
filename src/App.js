@@ -4,12 +4,12 @@ import programmes from './programmes.json';
 import { DisplayList } from './classes/displayList.js';
 import { ProgrammeTable } from './components/programmeTable.js';
 import { ProgrammeRow } from './components/programmeRow.js';
-import { modalContentConfirmDelete } from './components/modalContentConfirmDelete.js';
-import { Modal } from './components/modal.js';
+import { Modal } from './components/modal/modal.js';
+import { modalContentConfirmDelete } from './components/modal/modalContentConfirmDelete.js';
+import { modalContentAddProgramme } from './components/modal/modalContentAddProgramme.js';
 import { IconButton } from './components/buttons/iconButton';
 import { ReactComponent as PlusIcon } from './assets/plus.svg';
 import { ReactComponent as CrossIcon } from './assets/x.svg';
-import { modalContentAddProgramme } from './components/modalContentAddProgramme.js';
 import { TextInput } from './components/form/textInput.js';
 class App extends React.Component {
   constructor(props) {

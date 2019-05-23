@@ -1,7 +1,7 @@
 import React from 'react';
-import { IconButton } from './buttons/iconButton';
-import { ReactComponent as CheckIcon } from '../assets/check.svg';
-import { ReactComponent as CircleSlashIcon } from '../assets/circle-slash.svg';
+import { IconButton } from '../buttons/iconButton';
+import { ReactComponent as CheckIcon } from '../../assets/check.svg';
+import { ReactComponent as CircleSlashIcon } from '../../assets/circle-slash.svg';
 
 /** note lowercase identifier to stop Babel interpreting the JSX too early - this implemtation is possibly too magical to be long term practical */
 export const modalContentConfirmDelete = ({
