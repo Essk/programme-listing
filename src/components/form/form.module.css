@@ -1,0 +1,70 @@
+.input{
+    font-size: 18px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    margin-left: 1em;
+    color: white;
+}
+.textarea{
+    margin-top: 0.5em;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 0;
+    border:  1px solid white;
+    color: white;
+    padding: 0.5em;
+}
+.label{
+    font-weight: bold;
+}
+.wrapper{
+    display: flex;
+    padding: 1em 0;
+
+}
+.verticalWrapper{
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxOuter{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-left: 0.5em;
+}
+.checkbox{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.styledCheckbox, .styledCheckboxChecked{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: transparent;
+    border: 1px solid white;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:focus + .styledCheckbox, :focus + .styledCheckboxChecked{
+    outline: auto 5px -webkit-focus-ring-color;
+}
+.styledCheckbox svg{
+    transition: 0.3s;
+    display: none;
+    fill: white;
+}
+.styledCheckboxChecked svg{
+    transition: 0.3s;
+    display: block;
+    fill: white;
+}
